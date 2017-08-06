@@ -1,0 +1,98 @@
+@import "chartStyle.less";
+
+@duration1: 0.3s;
+@delay2: 0.3s;
+
+.info-section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  opacity: 0;
+  border: 1px solid @borderColor;
+  background-color: @cellColor;
+  transition: width @duration1 , opacity @duration1;
+}
+
+.show-content {
+  width:35%;
+  padding: 5%;
+  opacity: 1;
+}
+
+.info-content {
+  opacity: 0;
+  transition:opacity @delay2 @duration1;
+}
+
+.close-button {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+  transition: opacity @delay2 @duration1;
+}
+
+.show-delayed {
+  visibility: visible;
+  transition: opacity @delay2 @duration1;
+  opacity: 1;
+}
+
+.deck-content {
+  padding: 5px;
+}
+.bestworst {
+  padding: 5px;
+}
+
+.decklist-overlay {
+  background-color: #000000;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  //display: none;
+  visibility: hidden;
+  opacity: 0;
+  align-content: center;
+  transition: opacity @duration1, visibility @duration1;
+}
+
+.show-decklist-overlay {
+  visibility: visible;
+  opacity: 0.7;
+  transition: opacity @duration1, visibility @duration1;
+}
+
+.decklist {
+  //display: none;
+  visibility: hidden;
+  position: fixed;
+  align-content: center;
+  background-color: @cellColor;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.show-decklist {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.close-decklist {
+  margin: auto;
+  display: table;
+  align-content: center;
+}

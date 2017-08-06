@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern chart</title>
+</head>
+
+<link rel="stylesheet"
+      type="text/css"
+      href="styles/chartStyle.css">
+<link rel="stylesheet"
+      type="text/css"
+      href="styles/infosection.css">
+
+<body>
+
+<button type="button" onclick="fillChart('name')">Sort by name</button>
+
+<div id="modernChart"></div>
+
+<div id="infoSection"
+     class="info-section">
+  <div id="infoContent"
+       class="info-content">
+  </div>
+  <div class="close-button"
+       id="closeButton">
+    <button type="button"
+            onclick="removeInfo()">Click here to close
+    </button>
+  </div>
+</div>
+<div class="decklist-overlay"
+     id="decklistOverlay">
+
+</div>
+<div class="decklist"
+     id="decklist">
+  <button type="button"
+          class="close-decklist"
+          onclick="closeDecklist()">Click to close
+  </button>
+</div>
+
+<button type="button"
+        onclick="showDecklist()">Test overlay
+</button>
+
+<button type="button"
+        onclick="logCard('Abrupt Decay')">Test json
+</button>
+
+<button type="button"
+        onclick="openDecklist('jund')">Test decklist
+</button>
+
+</body>
+<script src="scripts/chartData.js"></script>
+<script src="scripts/specificDecks.js"></script>
+<script src="scripts/createChartScript.js"></script>
+<script src="scripts/interface.js"></script>
+<script src="scripts/decklistData.js"></script>
+
+</html>

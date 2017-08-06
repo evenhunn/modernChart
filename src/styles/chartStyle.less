@@ -1,0 +1,77 @@
+@mainColor: #999999;
+@mainColorHover: #AAAAAA;
+@cellColor: #CCCCCC;
+@borderColor: #444444;
+@cellWidth: 100px;
+@cellHeight: 50px;
+
+@win0:   #E33735;
+@win10:  #D34A34;
+@win20:  #C45E34;
+@win30:  #B47134;
+@win40:  #A58533;
+@win50:  #E7E523; //#959833;
+@win60:  #86AC33;
+@win70:  #76BF32;
+@win80:  #67D332;
+@win90:  #58E732;
+@win100: #3EFF0A;
+
+//@win0:   #F50508;
+//@win10:  #D11528;
+//@win20:  #AE2549;
+//@win30:  #8A3569;
+//@win40:  #67458A;
+//@win50:  #4456AB;
+//@win60:  #37758D;
+//@win70:  #2A956F;
+//@win80:  #1EB551;
+//@win90:  #11D533;
+//@win100: #05F515;
+
+
+.index-cell {
+  text-align: center;
+  //border: 1px solid @borderColor;
+  background-color: @mainColor;
+  margin: 0;
+  width: @cellWidth;
+  height: @cellHeight;
+  cursor: pointer;
+  min-width: 70px;
+}
+
+.index-cell:hover {
+  transition-duration: 0.5s;
+  background-color: @mainColorHover;
+}
+
+.inner-cell {
+  text-align: center;
+  //border: 1px solid @borderColor;
+  background-color: @cellColor;
+  margin: 0;
+  width: @cellWidth;
+  height: @cellHeight;
+}
+
+.cell-content {
+  position: relative;
+}
+
+.hide-cell {
+  display: none;
+}
+
+.win0 {background-color: @win0;}
+.win10 {background-color: @win10;}
+.win20 {background-color: @win20;}
+.win30 {background-color: @win30;}
+.win40 {background-color: @win40;}
+.win50 {background-color: @win50;}
+.win60 {background-color: @win60;}
+.win70 {background-color: @win70;}
+.win80 {background-color: @win80;}
+.win90 {background-color: @win90;}
+.win100 {background-color: @win100;}
+

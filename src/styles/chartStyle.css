@@ -1,0 +1,59 @@
+.index-cell {
+  text-align: center;
+  background-color: #999999;
+  margin: 0;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  min-width: 70px;
+}
+.index-cell:hover {
+  transition-duration: 0.5s;
+  background-color: #AAAAAA;
+}
+.inner-cell {
+  text-align: center;
+  background-color: #CCCCCC;
+  margin: 0;
+  width: 100px;
+  height: 50px;
+}
+.cell-content {
+  position: relative;
+}
+.hide-cell {
+  display: none;
+}
+.win0 {
+  background-color: #E33735;
+}
+.win10 {
+  background-color: #D34A34;
+}
+.win20 {
+  background-color: #C45E34;
+}
+.win30 {
+  background-color: #B47134;
+}
+.win40 {
+  background-color: #A58533;
+}
+.win50 {
+  background-color: #E7E523;
+}
+.win60 {
+  background-color: #86AC33;
+}
+.win70 {
+  background-color: #76BF32;
+}
+.win80 {
+  background-color: #67D332;
+}
+.win90 {
+  background-color: #58E732;
+}
+.win100 {
+  background-color: #3EFF0A;
+}
